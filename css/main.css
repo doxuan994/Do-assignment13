@@ -22,7 +22,9 @@ h3              { margin-top: 0; }
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
 
 *    { margin: 0; padding: 0; }
 html { font-size: 16px; }
@@ -41,14 +43,18 @@ img {
     margin: 0 auto;
 }
 a  { text-decoration: none !important; }
-q  { font-style: italic; }
+q, blockquote  {
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+}
 ul { list-style: none; }
 h3 { font-size: 2em; font-weight: 900; }
-cite {
+cite
+{
     padding: 10px 20px;
     margin: 0 0 20px;
 }
-
+.no-float { float: none; }
 
 
 
@@ -157,12 +163,17 @@ FOOTER
 /*------------------------------------------------------------------------------
 Styling for COMPONENTS
 ------------------------------------------------------------------------------*/
-.unrealengine { color: black; }
-.gimp         { color: darkslategray; }
-#adobe        { color: brown; }
+.unrealengine       { color: black; }
+.unrealengine:hover { color: black; }
+.gimp               { color: darkslategray; }
+.gimp:hover         { color: darkslategray; }
+#adobe              { color: brown; }
 
-#adobe, .unrealengine, .gimp { font-size: 1.6em; font-weight: 700; }
-
+#adobe, .unrealengine, .gimp {
+    font-size: 1.6em;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+}
 
 
 
@@ -178,7 +189,6 @@ Styling for COMPONENTS
 
 
 /* Characters */
-.no-float { float: none; }
 #rock, #fire, #snow { width: 100%; }
 #rock { background-color: #452E24; }
 #fire { background-color: #2F3622; }

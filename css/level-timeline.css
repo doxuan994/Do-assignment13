@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Gugi|ZCOOL+KuaiLe');
+
 /* Timeline levels */
 #level-timeline {
-    max-width: 640px;
+    max-width: 760px;
     margin: auto;
 }
 
@@ -12,6 +14,16 @@
     padding: 30px;
     counter-increment: section;
 }
+
+#level-timeline p:nth-child(1) { font-family: 'ZCOOL KuaiLe', cursive; }
+#level-timeline p:nth-child(2) { font-family: 'BioRhyme Expanded', serif; }
+#level-timeline p:nth-child(3) { font-family: 'Gugi', cursive; }
+
+.tooltip-rock { color: #1B2124; font-weight: bold; }
+.tooltip-fire { color: #74191E; font-weight: bold; }
+.tooltip-snow { color: #152731; font-weight: bold; }
+
+
 
 /* Add borders */
 #level-timeline p:nth-child(odd) {
